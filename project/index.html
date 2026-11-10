@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Lexend Mega";font-weight:400;src:url(assets/fonts/lexend-mega-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Lexend Mega";font-weight:500;src:url(assets/fonts/lexend-mega-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;src:url(assets/fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;src:url(assets/fonts/inter-latin-600-normal.woff2) format("woff2")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+/* soft top shade: only deepens the empty ceiling so white text reads clean; footage colours untouched */
+.shade{position:absolute;left:0;top:0;width:100%;height:470px;pointer-events:none;
+  background:linear-gradient(180deg,rgba(0,0,0,.30) 0%,rgba(0,0,0,.16) 45%,rgba(0,0,0,0) 100%)}
+.ov{position:absolute;left:0;width:100%;text-align:center;color:#fff;pointer-events:none}
+.ov .in{display:inline-block;text-shadow:0 2px 14px rgba(0,0,0,.55),0 0 2px rgba(0,0,0,.35)}
+.hook .in{font-family:"Inter";font-weight:600;font-size:46px;letter-spacing:-.01em}
+.hook .rule{display:block;width:120px;height:3px;margin:16px auto 0;background:#fff;border-radius:2px;transform-origin:center;box-shadow:0 1px 8px rgba(0,0,0,.4)}
+.kw .in{font-family:"Lexend Mega";font-weight:500;font-size:29px;letter-spacing:-.03em}
+.kw .dot{display:inline-block;margin:0 .45em;opacity:0}
+.kw .w{display:inline-block}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="61.6" data-width="1080" data-height="1920">
+<video id="a-roll" class="clip" src="assets/edited.mp4" playsinline data-start="0" data-duration="61.6" data-track-index="0" data-has-audio="true"
+  style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+<div class="shade"></div>
+<div id="hook" class="ov hook clip" data-start="0.05" data-duration="2.90" data-track-index="1" style="top:198px"><span class="in">Headphone ni memang worth it!</span><i class="rule"></i></div>
+<div id="c0" class="ov kw clip" data-start="2.85" data-duration="1.50" data-track-index="2" style="top:204px;left:0px"><span class="in">TAK SAKIT TELINGA</span></div>
+<div id="c1" class="ov kw clip" data-start="7.85" data-duration="1.60" data-track-index="2" style="top:204px;left:0px"><span class="in">EAR CUP LEMBUT</span></div>
+<div id="c2" class="ov kw clip" data-start="13.96" data-duration="2.34" data-track-index="2" style="top:204px;left:0px"><span class="in">HEADBAND BOLEH ADJUST</span></div>
+<div id="c3" class="ov kw clip" data-start="17.52" data-duration="1.93" data-track-index="2" style="top:204px;left:0px"><span class="in">SOUND CLEAR</span></div>
+<div id="c4" class="ov kw clip" data-start="19.66" data-duration="2.14" data-track-index="2" style="top:204px;left:0px"><span class="in">BASS SEDAP</span></div>
+<div id="c5" class="ov kw clip" data-start="24.46" data-duration="1.99" data-track-index="2" style="top:204px;left:0px"><span class="in">NAMPAK PREMIUM</span></div>
+<div id="c6" class="ov kw clip" data-start="28.5" data-duration="1.55" data-track-index="2" style="top:204px;left:0px"><span class="in">BLUETOOTH • TERUS PAIR</span></div>
+<div id="c7" class="ov kw clip" data-start="36.98" data-duration="1.22" data-track-index="2" style="top:204px;left:0px"><span class="in">LUPA DIRI WEH</span></div>
+<div id="c8" class="ov kw clip" data-start="38.8" data-duration="0.82" data-track-index="2" style="top:204px;left:0px"><span class="in">HARGA MURAH</span></div>
+<div id="c9" class="ov kw clip" data-start="44.94" data-duration="1.46" data-track-index="2" style="top:204px;left:0px"><span class="in">RAMAI DAH GRAB</span></div>
+<div id="c10" class="ov kw clip" data-start="49.16" data-duration="3.24" data-track-index="2" style="top:204px;left:0px"><span class="in"><span class="w" id="c10w0">SELESA</span><span class="dot" id="c10d0">·</span><span class="w" id="c10w1">PADU</span><span class="dot" id="c10d1">·</span><span class="w" id="c10w2">SOUND BEST</span></span></div>
+<div id="c11" class="ov kw clip" data-start="54.24" data-duration="1.86" data-track-index="2" style="top:204px;left:0px"><span class="in">GOOJODOQ J236</span></div>
+<div id="c12" class="ov kw clip" data-start="56.34" data-duration="1.61" data-track-index="2" style="top:204px;left:0px"><span class="in">SANGAT RECOMMEND</span></div>
+<div id="c13" class="ov kw clip" data-start="59.68" data-duration="1.92" data-track-index="2" style="top:204px;left:0px"><span class="in">HARGA PROMO • GRAB CEPAT</span></div>
+<audio id="sfxh" src="assets/sfx/hook.wav" data-start="0.00" data-duration="1.70" data-volume="0.55" data-track-index="3"></audio>
+<audio id="sfx0" src="assets/sfx/ting.wav" data-start="2.81" data-duration="1.00" data-volume="0.38" data-track-index="4"></audio>
+<audio id="sfx1" src="assets/sfx/pop.wav" data-start="7.81" data-duration="0.12" data-volume="0.5" data-track-index="3"></audio>
+<audio id="sfx2" src="assets/sfx/tick.wav" data-start="13.92" data-duration="0.05" data-volume="0.35" data-track-index="4"></audio>
+<audio id="sfx3" src="assets/sfx/ting2.wav" data-start="17.48" data-duration="1.09" data-volume="0.38" data-track-index="3"></audio>
+<audio id="sfx4" src="assets/sfx/bass.wav" data-start="19.66" data-duration="0.45" data-volume="0.6" data-track-index="4"></audio>
+<audio id="sfx5" src="assets/sfx/shimmer.wav" data-start="24.42" data-duration="1.38" data-volume="0.35" data-track-index="3"></audio>
+<audio id="sfx6" src="assets/sfx/blip.wav" data-start="28.46" data-duration="0.20" data-volume="0.42" data-track-index="4"></audio>
+<audio id="sfx7" src="assets/sfx/whoosh.wav" data-start="36.94" data-duration="0.55" data-volume="0.45" data-track-index="3"></audio>
+<audio id="sfx8" src="assets/sfx/cash.wav" data-start="38.76" data-duration="0.97" data-volume="0.38" data-track-index="4"></audio>
+<audio id="sfx9" src="assets/sfx/ting.wav" data-start="44.90" data-duration="1.00" data-volume="0.38" data-track-index="3"></audio>
+<audio id="sfx10_0" src="assets/sfx/tick.wav" data-start="49.16" data-duration="0.05" data-volume="0.35" data-track-index="4"></audio>
+<audio id="sfx10_1" src="assets/sfx/tick.wav" data-start="50.62" data-duration="0.05" data-volume="0.35" data-track-index="3"></audio>
+<audio id="sfx10_2" src="assets/sfx/tick.wav" data-start="51.52" data-duration="0.05" data-volume="0.35" data-track-index="4"></audio>
+<audio id="sfx11" src="assets/sfx/shimmer.wav" data-start="54.20" data-duration="1.38" data-volume="0.35" data-track-index="3"></audio>
+<audio id="sfx12" src="assets/sfx/ting2.wav" data-start="56.30" data-duration="1.09" data-volume="0.38" data-track-index="4"></audio>
+<audio id="sfx13" src="assets/sfx/finale.wav" data-start="59.64" data-duration="1.84" data-volume="0.42" data-track-index="3"></audio>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#hook .in",{opacity:0,y:14,scale:.96},{opacity:1,y:0,scale:1,duration:.55,ease:"power3.out"},0.16999999999999998);
+tl.fromTo("#hook .rule",{scaleX:0,opacity:0},{scaleX:1,opacity:.9,duration:.6,ease:"power2.out"},0.39999999999999997);
+tl.to("#hook",{opacity:0,y:-8,duration:.3,ease:"power2.in"},2.65);
+tl.fromTo("#c0 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},2.85);
+tl.to("#c0 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},4.10);
+tl.fromTo("#c1 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},7.85);
+tl.to("#c1 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},9.20);
+tl.fromTo("#c2 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},13.96);
+tl.to("#c2 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},16.05);
+tl.fromTo("#c3 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},17.52);
+tl.to("#c3 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},19.20);
+tl.fromTo("#c4 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},19.66);
+tl.to("#c4 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},21.55);
+tl.fromTo("#c5 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},24.46);
+tl.to("#c5 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},26.20);
+tl.fromTo("#c6 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},28.50);
+tl.to("#c6 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},29.80);
+tl.fromTo("#c7 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},36.98);
+tl.to("#c7 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},37.95);
+tl.fromTo("#c8 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},38.80);
+tl.to("#c8 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},39.37);
+tl.fromTo("#c9 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},44.94);
+tl.to("#c9 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},46.15);
+tl.fromTo("#c10w0",{opacity:0,y:10},{opacity:1,y:0,duration:.32,ease:"power3.out"},49.16);
+tl.fromTo("#c10w1",{opacity:0,y:10},{opacity:1,y:0,duration:.32,ease:"power3.out"},50.62);
+tl.fromTo("#c10d0",{opacity:0},{opacity:.7,duration:.2},50.57);
+tl.fromTo("#c10w2",{opacity:0,y:10},{opacity:1,y:0,duration:.32,ease:"power3.out"},51.52);
+tl.fromTo("#c10d1",{opacity:0},{opacity:.7,duration:.2},51.47);
+tl.to("#c10 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},52.15);
+tl.fromTo("#c11 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},54.24);
+tl.to("#c11 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},55.85);
+tl.fromTo("#c12 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},56.34);
+tl.to("#c12 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},57.70);
+tl.fromTo("#c13 .in",{opacity:0,y:12,scale:.97},{opacity:1,y:0,scale:1,duration:.38,ease:"power3.out"},59.68);
+tl.to("#c13 .in",{opacity:0,y:-6,duration:.25,ease:"power2.in"},61.35);
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>
