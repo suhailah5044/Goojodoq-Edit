@@ -1,0 +1,6 @@
+node_modules/
+.hyperframes/
+*.mov
+*.mp4
+*.wav
+renders/
