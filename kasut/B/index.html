@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Kaushan";src:url(assets/fonts/kaushan-script-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Archivo";font-weight:800;font-style:italic;src:url(assets/fonts/archivo-latin-800-italic.woff2) format("woff2")}
+@font-face{font-family:"Archivo";font-weight:600;font-style:italic;src:url(assets/fonts/archivo-latin-600-italic.woff2) format("woff2")}
+@font-face{font-family:"Archivo";font-weight:700;src:url(assets/fonts/archivo-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:700;src:url(assets/fonts/inter-latin-700-normal.woff2) format("woff2")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+.shade{position:absolute;left:0;top:0;width:100%;height:620px;pointer-events:none;
+  background:linear-gradient(180deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,.14) 55%,rgba(0,0,0,0) 100%)}
+.ov{position:absolute;pointer-events:none;color:#fff}
+
+.hook{left:0;width:100%;top:150px;text-align:center}
+.big{display:block;font:800 italic 70px/1 "Archivo";color:#fff;letter-spacing:-.02em;text-transform:uppercase;
+  -webkit-text-stroke:9px #111;paint-order:stroke fill;text-shadow:0 6px 0 #111,0 10px 26px rgba(0,0,0,.4)}
+.big .w{display:inline-block;margin:0 .12em}
+.script{display:block;margin-top:2px;font:84px/1.1 "Kaushan";color:#FFE11B;
+  -webkit-text-stroke:9px #111;paint-order:stroke fill;text-shadow:0 6px 0 #111}
+.tag{display:inline-block;margin-top:12px;background:#111;color:#fff;font:700 26px/1 "Inter";letter-spacing:.08em;
+  padding:10px 18px;border-radius:999px;border:2px solid #FFE11B}
+.cb{width:620px}
+.cb.L{left:64px;text-align:left}
+.cb.R{right:64px;text-align:right}
+.cb .lead{display:block;font:600 italic 32px/1.2 "Archivo";color:#fff;
+  text-shadow:0 2px 10px rgba(0,0,0,.65),0 0 2px rgba(0,0,0,.5)}
+.cb .hl{position:relative;isolation:isolate;z-index:0;display:inline-block;margin-top:6px;padding:6px 16px 4px;
+  font:800 italic 42px/1.1 "Archivo";color:#111;text-transform:uppercase;letter-spacing:-.01em}
+.cb .hl i{position:absolute;inset:0;background:#FFE11B;border-radius:6px;transform:skewX(-8deg);z-index:-1;
+  box-shadow:0 5px 0 #111}
+.cb .hl b{position:relative;font:inherit}
+.cb .bar{display:inline-block;width:10px;height:10px;border-radius:50%;background:#FF4B3E;margin:0 10px 4px 0;vertical-align:middle}
+.cb.R .bar{margin:0 0 4px 10px}
+.end{left:0;width:100%;top:160px;text-align:center}
+.end .big{font-size:58px}
+.end .script{font-size:78px}
+.arrow{display:block;margin:6px auto 0;width:60px;height:60px}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="33.26" data-width="1080" data-height="1920">
+<video id="a-roll" class="clip" src="assets/edited_B.mp4" playsinline data-start="0" data-duration="33.26" data-track-index="0" data-has-audio="true"
+  style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+<div class="shade"></div>
+<div id="hook" class="ov hook clip" data-start="0" data-duration="2.52" data-track-index="1"><span class="big"><span class="w">Kena</span><span class="w">air</span><span class="w">pun...</span></span><span class="script">tak basah langsung?!</span><span class="tag">KASUT SEKOLAH ABARO</span></div>
+<div id="b0" class="ov cb L clip" data-start="3.40" data-duration="1.52" data-track-index="2" style="top:300px"><span class="lead"><span class="bar"></span>Saya suka sebab</span><span class="hl"><i></i><b>air tak tembus</b></span></div>
+<div id="b1" class="ov cb R clip" data-start="6.14" data-duration="1.58" data-track-index="2" style="top:250px"><span class="lead">Setiap tahun<span class="bar"></span></span><span class="hl"><i></i><b>wajib repeat</b></span></div>
+<div id="b2" class="ov cb L clip" data-start="7.76" data-duration="2.52" data-track-index="2" style="top:260px"><span class="lead"><span class="bar"></span>Design dia</span><span class="hl"><i></i><b>serius cantik</b></span></div>
+<div id="b3" class="ov cb R clip" data-start="10.30" data-duration="2.30" data-track-index="2" style="top:300px"><span class="lead">Belakang pun<span class="bar"></span></span><span class="hl"><i></i><b>stylish</b></span></div>
+<div id="b4" class="ov cb L clip" data-start="13.62" data-duration="2.06" data-track-index="2" style="top:300px"><span class="lead"><span class="bar"></span>Tapak</span><span class="hl"><i></i><b>anti-slip</b></span></div>
+<div id="b5" class="ov cb R clip" data-start="16.16" data-duration="1.70" data-track-index="2" style="top:300px"><span class="lead">Sesuai untuk<span class="bar"></span></span><span class="hl"><i></i><b>sekolah rendah</b></span></div>
+<div id="b6" class="ov cb L clip" data-start="18.56" data-duration="3.70" data-track-index="2" style="top:300px"><span class="lead"><span class="bar"></span>Velcro — pakai sendiri,</span><span class="hl"><i></i><b>tak payah ikat</b></span></div>
+<div id="b7" class="ov cb R clip" data-start="22.32" data-duration="2.24" data-track-index="2" style="top:260px"><span class="lead">Kotor?<span class="bar"></span></span><span class="hl"><i></i><b>senang cuci</b></span></div>
+<div id="b8" class="ov cb L clip" data-start="24.62" data-duration="1.04" data-track-index="2" style="top:260px"><span class="lead"><span class="bar"></span>Saya</span><span class="hl"><i></i><b>lap je!</b></span></div>
+<div id="b9" class="ov cb R clip" data-start="26.74" data-duration="1.48" data-track-index="2" style="top:280px"><span class="lead">Sekarang tengah<span class="bar"></span></span><span class="hl"><i></i><b>harga promo</b></span></div>
+<div id="b10" class="ov cb L clip" data-start="28.78" data-duration="1.30" data-track-index="2" style="top:280px"><span class="lead"><span class="bar"></span>Cepat, size</span><span class="hl"><i></i><b>masih banyak</b></span></div>
+<div id="end" class="ov end clip" data-start="30.14" data-duration="3.12" data-track-index="1"><span class="big">Dapatkan sekarang</span><span class="script">di beg kuning!</span><svg class="arrow" viewBox="0 0 60 60"><path d="M30 6 V48 M14 34 L30 50 L46 34" fill="none" stroke="#FFE11B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 3px 0 #111)"/></svg></div>
+<audio id="s0" src="assets/sfx/tick.wav" data-start="0.02" data-duration="0.05" data-volume="0.45" data-track-index="3"></audio>
+<audio id="s1" src="assets/sfx/tick.wav" data-start="0.18" data-duration="0.05" data-volume="0.45" data-track-index="4"></audio>
+<audio id="s2" src="assets/sfx/tick.wav" data-start="0.34" data-duration="0.05" data-volume="0.45" data-track-index="3"></audio>
+<audio id="s3" src="assets/sfx/whoosh.wav" data-start="0.50" data-duration="0.55" data-volume="0.5" data-track-index="4"></audio>
+<audio id="s4" src="assets/sfx/ting2.wav" data-start="0.90" data-duration="1.09" data-volume="0.38" data-track-index="3"></audio>
+<audio id="s5" src="assets/sfx/blip.wav" data-start="3.46" data-duration="0.20" data-volume="0.4" data-track-index="4"></audio>
+<audio id="s6" src="assets/sfx/pop.wav" data-start="6.20" data-duration="0.12" data-volume="0.4" data-track-index="3"></audio>
+<audio id="s7" src="assets/sfx/blip.wav" data-start="7.82" data-duration="0.20" data-volume="0.4" data-track-index="4"></audio>
+<audio id="s8" src="assets/sfx/pop.wav" data-start="10.36" data-duration="0.12" data-volume="0.4" data-track-index="3"></audio>
+<audio id="s9" src="assets/sfx/bass.wav" data-start="13.68" data-duration="0.45" data-volume="0.5" data-track-index="4"></audio>
+<audio id="s10" src="assets/sfx/blip.wav" data-start="16.22" data-duration="0.20" data-volume="0.4" data-track-index="3"></audio>
+<audio id="s11" src="assets/sfx/pop.wav" data-start="18.62" data-duration="0.12" data-volume="0.4" data-track-index="4"></audio>
+<audio id="s12" src="assets/sfx/blip.wav" data-start="22.38" data-duration="0.20" data-volume="0.4" data-track-index="3"></audio>
+<audio id="s13" src="assets/sfx/pop.wav" data-start="24.68" data-duration="0.12" data-volume="0.4" data-track-index="4"></audio>
+<audio id="s14" src="assets/sfx/cash.wav" data-start="26.80" data-duration="0.97" data-volume="0.36" data-track-index="3"></audio>
+<audio id="s15" src="assets/sfx/pop.wav" data-start="28.84" data-duration="0.12" data-volume="0.4" data-track-index="4"></audio>
+<audio id="s16" src="assets/sfx/cash.wav" data-start="30.14" data-duration="0.97" data-volume="0.38" data-track-index="3"></audio>
+<audio id="s17" src="assets/sfx/finale.wav" data-start="30.44" data-duration="1.84" data-volume="0.36" data-track-index="4"></audio>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#hook .w",{opacity:0,scale:1.8},{opacity:1,scale:1,duration:.22,stagger:.16,ease:"power4.out"},0.02);
+tl.fromTo("#hook .script",{opacity:0,y:20,rotation:-4},{opacity:1,y:0,rotation:-2,duration:.42,ease:"back.out(2)"},0.55);
+tl.fromTo("#hook .tag",{opacity:0,scale:.8},{opacity:1,scale:1,duration:.3,ease:"back.out(2)"},0.9);
+tl.to("#hook",{opacity:0,y:-14,duration:.26,ease:"power2.in"},2.24);
+tl.fromTo("#b0 .lead",{opacity:0,x:-40},{opacity:1,x:0,duration:.3,ease:"power3.out"},3.40);
+tl.fromTo("#b0 .hl i",{scaleX:0,transformOrigin:"left center"},{scaleX:1,duration:.3,ease:"power3.out"},3.50);
+tl.fromTo("#b0 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},3.62);
+tl.to("#b0",{opacity:0,x:20,duration:.22,ease:"power2.in"},4.70);
+tl.fromTo("#b1 .lead",{opacity:0,x:40},{opacity:1,x:0,duration:.3,ease:"power3.out"},6.14);
+tl.fromTo("#b1 .hl i",{scaleX:0,transformOrigin:"right center"},{scaleX:1,duration:.3,ease:"power3.out"},6.24);
+tl.fromTo("#b1 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},6.36);
+tl.to("#b1",{opacity:0,x:-20,duration:.22,ease:"power2.in"},7.50);
+tl.fromTo("#b2 .lead",{opacity:0,x:-40},{opacity:1,x:0,duration:.3,ease:"power3.out"},7.76);
+tl.fromTo("#b2 .hl i",{scaleX:0,transformOrigin:"left center"},{scaleX:1,duration:.3,ease:"power3.out"},7.86);
+tl.fromTo("#b2 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},7.98);
+tl.to("#b2",{opacity:0,x:20,duration:.22,ease:"power2.in"},10.06);
+tl.fromTo("#b3 .lead",{opacity:0,x:40},{opacity:1,x:0,duration:.3,ease:"power3.out"},10.30);
+tl.fromTo("#b3 .hl i",{scaleX:0,transformOrigin:"right center"},{scaleX:1,duration:.3,ease:"power3.out"},10.40);
+tl.fromTo("#b3 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},10.52);
+tl.to("#b3",{opacity:0,x:-20,duration:.22,ease:"power2.in"},12.38);
+tl.fromTo("#b4 .lead",{opacity:0,x:-40},{opacity:1,x:0,duration:.3,ease:"power3.out"},13.62);
+tl.fromTo("#b4 .hl i",{scaleX:0,transformOrigin:"left center"},{scaleX:1,duration:.3,ease:"power3.out"},13.72);
+tl.fromTo("#b4 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},13.84);
+tl.to("#b4",{opacity:0,x:20,duration:.22,ease:"power2.in"},15.46);
+tl.fromTo("#b5 .lead",{opacity:0,x:40},{opacity:1,x:0,duration:.3,ease:"power3.out"},16.16);
+tl.fromTo("#b5 .hl i",{scaleX:0,transformOrigin:"right center"},{scaleX:1,duration:.3,ease:"power3.out"},16.26);
+tl.fromTo("#b5 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},16.38);
+tl.to("#b5",{opacity:0,x:-20,duration:.22,ease:"power2.in"},17.64);
+tl.fromTo("#b6 .lead",{opacity:0,x:-40},{opacity:1,x:0,duration:.3,ease:"power3.out"},18.56);
+tl.fromTo("#b6 .hl i",{scaleX:0,transformOrigin:"left center"},{scaleX:1,duration:.3,ease:"power3.out"},18.66);
+tl.fromTo("#b6 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},18.78);
+tl.to("#b6",{opacity:0,x:20,duration:.22,ease:"power2.in"},22.04);
+tl.fromTo("#b7 .lead",{opacity:0,x:40},{opacity:1,x:0,duration:.3,ease:"power3.out"},22.32);
+tl.fromTo("#b7 .hl i",{scaleX:0,transformOrigin:"right center"},{scaleX:1,duration:.3,ease:"power3.out"},22.42);
+tl.fromTo("#b7 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},22.54);
+tl.to("#b7",{opacity:0,x:-20,duration:.22,ease:"power2.in"},24.34);
+tl.fromTo("#b8 .lead",{opacity:0,x:-40},{opacity:1,x:0,duration:.3,ease:"power3.out"},24.62);
+tl.fromTo("#b8 .hl i",{scaleX:0,transformOrigin:"left center"},{scaleX:1,duration:.3,ease:"power3.out"},24.72);
+tl.fromTo("#b8 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},24.84);
+tl.to("#b8",{opacity:0,x:20,duration:.22,ease:"power2.in"},25.44);
+tl.fromTo("#b9 .lead",{opacity:0,x:40},{opacity:1,x:0,duration:.3,ease:"power3.out"},26.74);
+tl.fromTo("#b9 .hl i",{scaleX:0,transformOrigin:"right center"},{scaleX:1,duration:.3,ease:"power3.out"},26.84);
+tl.fromTo("#b9 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},26.96);
+tl.to("#b9",{opacity:0,x:-20,duration:.22,ease:"power2.in"},28.00);
+tl.fromTo("#b10 .lead",{opacity:0,x:-40},{opacity:1,x:0,duration:.3,ease:"power3.out"},28.78);
+tl.fromTo("#b10 .hl i",{scaleX:0,transformOrigin:"left center"},{scaleX:1,duration:.3,ease:"power3.out"},28.88);
+tl.fromTo("#b10 .hl b",{opacity:0,y:8},{opacity:1,y:0,duration:.24,ease:"power2.out"},29.00);
+tl.to("#b10",{opacity:0,x:20,duration:.22,ease:"power2.in"},29.86);
+tl.fromTo("#end .big",{opacity:0,scale:1.5},{opacity:1,scale:1,duration:.3,ease:"power4.out"},30.14);
+tl.fromTo("#end .script",{opacity:0,y:20},{opacity:1,y:0,duration:.4,ease:"back.out(2)"},30.44);
+tl.fromTo("#end .arrow",{opacity:0,y:-10},{opacity:1,y:0,duration:.3},30.74);
+tl.to("#end .arrow",{y:12,duration:.3,yoyo:true,repeat:6,ease:"sine.inOut"},31.04);
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

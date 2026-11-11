@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/suhailah5044/Goojodoq-Edit#readme",
   "dependencies": {
+    "@fontsource/archivo": "^5.3.0",
     "@fontsource/inter": "^5.3.0",
+    "@fontsource/kaushan-script": "^5.3.0",
     "@fontsource/lexend-mega": "^5.3.0",
     "gsap": "^3.12.5",
     "hyperframes": "^0.9.28"
